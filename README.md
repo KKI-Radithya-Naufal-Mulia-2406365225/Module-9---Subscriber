@@ -3,6 +3,7 @@
 ---
 ![Slow Subscriber](images/slowexample1.0.png)
 What Happened: When the publisher was run multiple times in quick succession, it sent a total of 15 events to the broker almost instantly.
+
 ---
 ![Real Slow Subscriber](images/rabbitmq2.0.png)
 ![First Console VSCode](images/firstconsole.png)
