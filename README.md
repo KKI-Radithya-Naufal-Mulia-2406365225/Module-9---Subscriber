@@ -3,3 +3,8 @@
 ---
 ![Slow Subscriber](images/slowexample1.0.png)
 What Happened: When the publisher was run multiple times in quick succession, it sent a total of 15 events to the broker almost instantly.
+---
+![Real Slow Subscriber](images/rabbitmq2.0.png)
+![First Console VSCode](images/firstconsole.png)
+![Second and Third Console Terminal](images/secondandthirdconsole.png)
+What Happened: When I run three subscriber terminals, I'm basically implementing the Competing Consumers pattern. Instead of one subscriber struggling to process every message with a 1-second delay, RabbitMQ distributes the events across all active consumers. So, that's why in each console the name of the user aren't properly ordered.
